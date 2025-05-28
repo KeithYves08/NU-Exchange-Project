@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sample</title>
+</head>
+<body>
+    <a href="thelink" target=_self title = "This takes you to homepage."<h1>WEBNAME</h1></a> <!--target=_self title = text appears when u hover the cursor-->
+    <hr> <!--just  a horizontal line-->
+    <br> <!--line break-->
+
+    <!--HTML FORMATTING TAGS-->
+    <p><ins>THIS</ins> <big>IS</big> <i>MY</i> <b>FUCKING</b> <sub>WEBSITE</sub> <del>YOU BITCH</del></p> 
+    <!--b is for bold, i is for italic, big is for the size, sub is for subscript(down), sup is for superscript(up), ins is for underline, del is for lined words-->
+
+    <a href="link">
+    <img src="/images/roblox.png" alt="Jeff&Krisha" title="cars" height="300" width="150">
+    </a>
+
+    <h4>Unordered List</h4>
+    <ul>
+        <li>Pizza Dough</li>
+        <li>Tomato Sauce</li>
+        <li>Cheese</li>
+        <li>Toppings</li>
+            <ul>Pepperoni</ul>
+            <ul>Mushrooms</ul>
+            <ul>Peppers</ul>
+    </ul>
+    <h4>Ordered List</h4>
+    <ol type = '1'>
+        <li>Eat breakfast</li>
+        <li>Take a shower</li>
+        <li>Leave for school</li>
+    </ol>
+    <h4>Description List</h4> <!--dt if for term, dd is for definition-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>This adds structure to a webpage</dd>
+        <dt>CSS</dt>
+        <dd>This adds style to a webpage</dd>
+        <dt>Phyton</dt>
+        <dd>This add functionality to the webpage</dd>
+    </dl>
+
+    <h3>Store Hours</h3>
+    <table bgcolor = "black" width = "700"> <!--width for this is times the number of the width of each th-->
+        <tr bgcolor = "gray"> <!--table rows-->
+            <th width = "100">Sunday</th> <!--table header-->
+            <th width = "100">Monday</th>
+            <th width = "100">Tuesday</th>
+            <th width = "100">Wednesday</th>
+            <th width = "100">Thursday</th>
+            <th width = "100">Friday</th>
+            <th width = "100">Saturday</th>
+        </tr> 
+        <tr bgcolor = "lightgray" align="center">
+            <td>Closed</td> <!--table data-->
+            <td>Open</td>
+            <td>Open</td>
+            <td>Closed</td>
+            <td>Open</td>
+            <td>Open</td>
+            <td>Closed</td>
+        </tr>
+    </table>
+
+    <!--span = adds markup to text or portion of a document-->
+    <!--div = defines a division of a document-->
+    <h2 style="background-color: #444444;">
+        <p style="background-color: rebeccapurple;">norem ako rito marami</p>
+        <p><span style="color: blue;">norem ako</span> pero pansariling gamit ko lang to</p>
+        <p>Aljames raahhh</p>
+    </h2>
+
+    <!--iframe = embed content from another source into an HTML document-->
+    <iframe src="link or your other html" width="750" height="250" frameborder="0"></iframe>
+
+    <a href="link">
+        <button style="background-color: darkred;color: white; border-radius: 5px;">Click me</button> <!--u can add disable in button tag-->
+        <!--onclick = "doSomething()" on the button-->
+        <!--<p id = "test">Hello<slash p>-->
+        <!--script tag --- function doSomething(){document.getElementById("test").innerHTML = "Goodbye"}-->
+    </a>
+
+    <form action="link"  method="get"> <!--post to get some secure information-->
+
+        <div>
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+        </div>
+
+        <br>
+
+        </div>
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">Password: </label>
+            <input type="password" id="pass" name="pass" placeholder="Enter your password" maxlength = "17" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" id="mail" name="mail" placeholder="Spants@gmail.com" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">Phone number: </label>
+            <input type="tel" id="num" name="num" placeholder="(63)+ 00000" maxlength = "17" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="date">Birthdate: </label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="quantity">Quantity: </label>
+            <input type="number" id="quantity" name="quantity" min="0" max="99" value="1">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="title">Title: </label>
+            <label for="Mr.">Mr.</label>
+            <input type="radio" id="Mr." name="title" value="Mr.">
+
+            <label for="Mrs.">Mrs.</label>
+            <input type="radio" id="Mrs." name="title" value="Mrs.">
+
+            <label for="Ms.">Ms.</label>
+            <input type="radio" id="Ms." name="title" value="Ms.">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="payment">Payment: </label>
+            <select id="payment" name="payment">
+               <option value="visa">Visa</option> 
+               <option value="master">Mastercard</option>
+               <option value="gift">Giftcard</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="subscribe">Subscribe: </label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset"> <!--reset whatver is in the form-->
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+        </form>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+
+

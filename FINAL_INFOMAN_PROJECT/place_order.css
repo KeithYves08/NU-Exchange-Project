@@ -1,0 +1,45 @@
+body {
+    font-family: 'Arial', sans-serif;
+    /* background-color: #f4f4f4; */
+    background: linear-gradient(to top, black, #00001A, #00001A, #000033, black);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.message h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #003399; /* Deep blue color */
+}
+
+.message p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #003399; /* Deep blue color */
+}
+
+button {
+    background-color: #ffcc00; /* Bright yellow color */
+    color: #003399; /* Deep blue color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e6b800; /* Slightly darker yellow for hover effect */
+}

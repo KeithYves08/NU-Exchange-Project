@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+.navbar {
+    background-color: darkblue;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #d1b3ff;
+}
+.navbar .logo {
+    color: rgba(255, 217, 0, 0.858);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Press Start 2P' ,cursive;
+    margin-left: 30px;
+}
+.search-bar i {
+    position: absolute;
+    top: 30px;
+    right: 545px;
+}
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 90px;
+}
+.navbar .search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium';
+    color: darkblue;
+}
+.navbar .search-bar i {
+    color: rgba(255, 217, 0, 0.858);
+    margin-left: 40px;
+    font-size: 24px;
+}
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 217, 0, 0.858);
+}
+.navbar .menu i {
+    margin-right: 5px;
+}
+.profile a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 217, 0, 0.858);
+    cursor: pointer;
+}
+.menu div {
+    margin-right: 24px;
+}
+.bx-cart-alt {
+    font-size: 24px;
+    color: rgba(255, 217, 0, 0.858);
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.left {
+    flex: 1.5;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid darkblue;
+    border-radius: 8px;
+}
+
+.left h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.left form {
+    display: flex;
+    flex-direction: column;
+}
+
+.left label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: darkblue;
+}
+
+.left input, .left select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium';
+    outline: none;
+}
+
+.left input[type="submit"] {
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.left input[type="submit"]:hover {
+    background-color: rgba(255, 217, 0, 0.858);
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+.flex-container div {
+    flex: 1;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid darkblue;
+    border-radius: 8px;
+}
+
+.right h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.payment-method div {
+    display: flex;
+    align-items: center;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 5px;
+}

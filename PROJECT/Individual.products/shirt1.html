@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shirt 1</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="main_page.html"><img src="/images/NUEX.png"></a></div>
+        <div class="search-container">
+            <input type="text" placeholder="Search Products">
+            <button class="search-button"><img src="/images/search-icon.png"></button>
+        </div>
+        <div class="profile-cart">
+            <div class="cart" ><a href = "cart.html"><img src="/images/cart.png"></a></div>
+            <div class="profile"><a href = "profile.html"><img src="/images/r.png" href ="profile.html"></a></div>
+            <div class = "logout" id="logout"><a alt="logout" href = "logout.php">LOGOUT</a></div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="product-images">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide1" src="/images/shirt1front.png" alt="">
+                    <img id="slide2" src="/images/shirt1back.png" alt="">
+                    <img id="slide3" src="/images/Size_Chart_Tops.png" alt="">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide1"><span></span></a>
+                    <a href="#slide2"><span></span></a>
+                    <a href="#slide3"><span></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Shirt 1</h1>
+            <p>PHP 299.00</p>
+            <ul>
+                <li>Cotton</li>
+                <li>Unisex</li>
+                <li>Regular Fit</li>
+                <li>Note: Actual product color may vary from the images shown</li>
+            </ul>
+            <p id="desc">This high-quality shirt proudly displays the National University logo, making it perfect for students, alumni, and fans. Made from soft, breathable fabric, it ensures comfort throughout the day. Whether you’re attending classes, participating in university events, or just hanging out with friends, this shirt is a great way to show your school spirit.</p>
+            <table class="measurements-table">
+                <tr>
+                  <th>MEASUREMENT</th>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>L</th>
+                  <th>XL</th>
+                </tr>
+                <tr>
+                  <td>BODY LENGTH</td>
+                  <td>25</td>
+                  <td>27</td>
+                  <td>28.5</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>CHEST</td>
+                  <td>21</td>
+                  <td>23</td>
+                  <td>24.5</td>
+                  <td>26</td>
+                </tr>
+                <tr>
+                  <td>SLEEVE LENGTH</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                </tr>
+            </table>
+            <div class="size-options-container">
+                <h2>SIZE:</h2>
+                <div class="size-options">
+                    <button class="size-option">Small</button>
+                    <button class="size-option">Medium</button>
+                    <button class="size-option">Large</button>
+                    <button class="size-option">Extra large</button>
+                </div>
+            </div>
+            <div class="color-options">
+                <h2>COLOR:</h2>
+                <div class="color-option">
+                    <div class="color-circle" style="background-color: darkblue;"></div>
+                </div>
+                <div class="color-option">
+                    <div class="color-circle" style="background-color: black;"></div>
+                </div>
+            </div>
+            <div class="quantity-add-to-cart-container">
+                <div class="quantity-selector">
+                    <form method="POST" action="your_script.php">
+                        <button type="submit" name="action" value="decrement">-</button>
+                        <input type="text" name="quantity" value="1" readonly>
+                        <button type="submit" name="action" value="increment">+</button>
+                    </form>
+                </div>
+                <button type="submit" class="add-to-cart">Add to Cart</button>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

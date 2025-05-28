@@ -1,0 +1,177 @@
+/* Reset default margins and padding */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003399;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 20rem;
+}
+
+.logo img:hover {
+    filter: brightness(0.5);
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Search input field styles */
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    width: 500px; /* Adjust width as necessary */
+}
+
+/* Search button styles */
+.search-button {
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.search-button img {
+    width: 20px;
+}
+
+.search-button img:hover {
+    filter: brightness(0.5);
+}
+
+/* Cart and Profile container */
+.profile-cart {
+    display: flex;
+    gap: 20px; /* Space between cart and profile */
+    align-items: center;
+}
+
+/* Cart styles */
+.cart, .profile {
+    display: flex;
+    align-items: center;
+}
+
+/* Cart button styling */
+.cart {
+    background-color: #003399;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart img {
+    width: 2.5rem;
+}
+
+.cart img:hover {
+    filter: brightness(0.5);
+}
+
+/* Profile button styling */
+.profile {
+    background-color: #003399;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.profile img {
+    width: 2.5rem;
+    border-radius: 100%;
+}
+
+.profile img:hover {
+    filter: brightness(0.5);
+}
+
+h1 {
+    font-size: 4rem; /* Set font size */
+    text-align: left; /* Center the heading */
+    margin-top: 30px; /* Space above and below */
+    margin-bottom: -50px;
+    color: #003399; /* Match color with header */
+    margin-left: 21rem;
+}
+
+.product-card:hover {
+    transform: translateX(-10px);
+    transform: translateY(-10px);
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); /* Creates responsive columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1320px; /* Set a max width for the grid */
+    margin: 0 auto; /* Center the grid */
+}
+
+.product-card {
+    display: block; /* Ensure the entire card is clickable */
+    background-color: #003399; /* Dark blue for product cards */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Adjusts spacing */
+}
+
+.product-img {
+    width: 100%; /* Fill the width of the card */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    justify-content: center;
+}
+
+.product-img img {
+    max-width: 100%; /* Make image responsive */
+    max-height: 10rem; /* Limit the height */
+    object-fit: cover; /* Cover the container without distortion */
+}
+
+.product-info {
+    color: white; /* Change text color to white */
+}
+
+.product-info h2 {
+    font-size: 1.2rem;
+}
+
+.product-info p {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Remove underline from links */
+.no-underline {
+    text-decoration: none;
+    color: inherit; /* Optional: Inherit the color from the parent element */
+}

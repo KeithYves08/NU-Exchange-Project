@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cstyles.css">
+    <link rel="icon" type="image/x-icon" href="profile (64 x 64 px).png">
+    <title>Cart</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="main_page.html"><img src="NUEX.png"></a></div>
+        <div class="search-container">
+            <input type="text" placeholder="Search Products">
+            <button class="search-button"><img src="search-icon.png"></button>
+        </div>
+        <div class="profile-cart">
+            <div class="cart"><a href="cart.html"><img src="cart.png"></a></div>
+            <div class="profile"><a href="profile.html"><img src="prof.png"></a></div>
+            <div class="logout" id="logout"><a alt="logout" href="">LOGOUT</a></div>
+        </div>
+    </header>
+
+    <div class="cart-content">
+        <h2>SHOPPING CART</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div style="text-align: center;">
+                            <img src="placeholder.png" alt="Product Image" style="width:50px; height:50px;">
+                            <div>Product 1</div>
+                        </div>
+                    </td>
+                    <td>$placeholder</td>
+                    <td>1placeholder</td>
+                    <td>$placeholder</td>
+                    <td>
+                        <button class="button delete">Delete</button>
+                        <button class="button checkout">Checkout</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="text-align: center;">
+                            <img src="placeholder.png" alt="Product Image" style="width:50px; height:50px;">
+                            <div>Product 2</div>
+                        </div>
+                    </td>
+                    <td>$20</td>
+                    <td>2</td>
+                    <td>$40</td>
+                    <td>
+                        <button class="button delete">Delete</button>
+                        <button class="button checkout">Checkout</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="cart-footer">
+        <div class="footer-options">
+            <label><input type="checkbox"> Select All (placeholder)</label>
+            <a href="#" class="footer-delete">Delete</a>
+        </div>
+        <div class="footer-total">
+            <span>Total (0 item): <strong>₱0</strong></span>
+            <button class="checkout-button">Check Out</button>
+        </div>
+    </div>
+
+</body>
+</html>

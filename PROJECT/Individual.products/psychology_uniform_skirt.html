@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Psychology Uniform Skirt</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="main_page.html"><img src="/images/NUEX.png"></a></div>
+        <div class="search-container">
+            <input type="text" placeholder="Search Products">
+            <button class="search-button"><img src="/images/search-icon.png"></button>
+        </div>
+        <div class="profile-cart">
+            <div class="cart" ><a href = "cart.html"><img src="/images/cart.png"></a></div>
+            <div class="profile"><a href = "profile.html"><img src="/images/r.png" href ="profile.html"></a></div>
+            <div class = "logout" id="logout"><a alt="logout" href = "logout.php">LOGOUT</a></div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="product-images">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="slide1" src="/images/Size_Charts_Pants.png" alt="">
+                    <img id="slide2" src="/images/Size_Charts_Pants.png" alt="">
+                    <img id="slide3" src="/images/Size_Charts_Pants.png" alt="">
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide1"><span></span></a>
+                    <a href="#slide2"><span></span></a>
+                    <a href="#slide3"><span></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-details">
+            <h1>Psychology Uniform Skirt</h1>
+            <p>PHP 550.00</p>
+            <ul>
+                <li>Cotton</li>
+                <li>Regular Fit</li>
+                <li>Womens</li>
+                <li>Note: Actual product color may vary from the images shown</li>
+            </ul>
+            <p id="desc">These durable and stylish skirt are an essential part of the school uniform. Made from high-quality materials, they offer comfort and longevity. The classic fit and design make them suitable for daily wear, ensuring you look sharp and feel comfortable.</p>
+            <table class="measurements-table">
+                <tr>
+                  <th>MEASUREMENT</th>
+                  <th>S</th>
+                  <th>M</th>
+                  <th>L</th>
+                  <th>XL</th>
+                </tr>
+                <tr>
+                  <td>WAIST ROUND</td>
+                  <td>30</td>
+                  <td>32</td>
+                  <td>34</td>
+                  <td>36</td>
+                </tr>
+                <tr>
+                  <td>INSEAM LENGTH</td>
+                  <td>31</td>
+                  <td>31.5</td>
+                  <td>32</td>
+                  <td>32.5</td>
+                </tr>
+                <tr>
+                  <td>PANTS LENGTH</td>
+                  <td>40</td>
+                  <td>41</td>
+                  <td>41.5</td>
+                  <td>42</td>
+                </tr>
+            </table>
+            <div class="size-options-container">
+                <h2>SIZE:</h2>
+                <div class="size-options">
+                    <button class="size-option">Small</button>
+                    <button class="size-option">Medium</button>
+                    <button class="size-option">Large</button>
+                    <button class="size-option">Extra large</button>
+                </div>
+            </div>
+            <div class="color-options">
+                <h2>COLOR:</h2>
+                <div class="color-option">
+                    <div class="color-circle" style="background-color: #1c2e4a;"></div>
+                </div>
+            </div>
+            <div class="quantity-add-to-cart-container">
+                <div class="quantity-selector">
+                    <form method="POST" action="your_script.php">
+                        <button type="submit" name="action" value="decrement">-</button>
+                        <input type="text" name="quantity" value="1" readonly>
+                        <button type="submit" name="action" value="increment">+</button>
+                    </form>
+                </div>
+                <button type="submit" class="add-to-cart">Add to Cart</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div style="height: 80px;"></div>
+</body>
+</html>

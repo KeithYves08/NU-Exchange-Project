@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+.navbar {
+    background-color: darkblue;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #d1b3ff;
+}
+.navbar .logo {
+    color: rgba(255, 217, 0, 0.858);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Press Start 2P' ,cursive;
+    margin-left: 30px;
+}
+.search-bar i {
+    position: absolute;
+    top: 30px;
+    right: 545px;
+}
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px 90px;
+}
+.navbar .search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium';
+    color: darkblue;
+}
+.navbar .search-bar i {
+    color: rgba(255, 217, 0, 0.858);
+    margin-left: 40px;
+    font-size: 24px;
+}
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 217, 0, 0.858);
+}
+.navbar .menu i {
+    margin-right: 5px;
+}
+.profile a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 217, 0, 0.858);
+    cursor: pointer;
+}
+.menu div {
+    margin-right: 24px;
+}
+.bx-cart-alt {
+    font-size: 24px;
+    color: rgba(255, 217, 0, 0.858);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+    padding: 20px;
+}
+.product-images, .product-details {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+}
+.product-images {
+    flex: 1.2;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.product-details {
+    padding-top: 40px;
+    flex: 1;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin: 0;
+    color: black;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: black;
+}
+
+.product-details #desc {
+    font-size: 16px;
+    color: black;
+    margin-top: 40px;
+}
+
+.product-details ul {
+    color: black;
+    margin-top: 30px;
+}
+
+.product-details ul li {
+    margin-bottom: 10px;
+}
+.measurements-table {
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.measurements-table th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    background-color: darkblue;
+}
+
+.measurements-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    color: black;
+    background-color: rgba(255, 217, 0, 0.858);
+}
+
+.size-options-container {
+    margin-bottom: 20px;
+}
+
+.size-options-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black; /* Make sure the color is set to a visible color */
+    display: block; /* Ensure it's set to block, the default for <h2> */
+    margin-top: 40px;
+}
+
+.size-options {
+    display: flex; /* Use flexbox to align buttons in a row */
+    gap: 10px; /* Space between the buttons */
+}
+
+.size-option {
+    padding: 5px 10px; /* Adjust padding within the button */
+    cursor: pointer;
+    border: 1px solid #000; /* Button border */
+    background: none; /* Remove background */
+    margin: 0; /* Remove button margin */
+    color: white;
+    background-color: darkblue;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.size-option:hover {
+    background-color: rgba(255, 217, 0, 0.858); /* Change background color on hover */
+    color: #fff;
+}
+
+.color-options {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .color-option {
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .color-option .color-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 25px;
+  }
+.color-options h2 {
+    font-size: 18px; /* Font size for the Color heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: black; /* Color for the heading */
+    font-weight: bold; /* Makes the heading bold */
+    font-family: 'Franklin Gothic Medium';
+    margin-right: 15px;
+    margin-top: 40px;
+}
+
+.product-details {
+    height: 600px; /* Adjust to the desired fixed height */
+}
+
+.product-details table {
+    margin-top: 40px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-details table th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    background-color: darkblue;
+}
+
+.product-details table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    color: black;
+    background-color: rgba(255, 217, 0, 0.858);
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Changed from center to space-between */
+    margin-bottom: 20px;
+    margin-top: 90px;
+    border: 1px solid #000;
+    width: fit-content;
+    padding: 5px;
+}
+
+.add-to-cart {
+    background-color: none;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.quantity-selector button {
+    border: none;
+    background: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.quantity-selector input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    font-size: 18px;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider::-webkit-scrollbar {
+    display: none; 
+}
+  
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity 250ms ease;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}

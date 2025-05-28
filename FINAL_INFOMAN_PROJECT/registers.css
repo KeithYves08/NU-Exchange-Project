@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+	box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to top, black, #00001A, #00001A, #000033, black);
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(9px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 0 20px rgba(255, 217, 0, 0.858);
+    animation: slideIn 2s forwards ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100vw);
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+
+.wrapper h1{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-bottom: 45px;
+    margin-top: 5px;
+    font-family: 'Press Start 2P', cursive;
+    color: rgba(255, 217, 0, 0.858);
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    box-shadow: 2 3 10px rgba(0, 0, 0, .1);
+    margin: 30px 0;
+    
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium';
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+    box-shadow: 0 0 20px rgba(255, 217, 0, 0.858);
+    margin-bottom: 10px;
+    
+}
+
+.input-box input::placeholder{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    
+}
+
+.input-box:hover {
+    border-color: darkblue;
+    background-color: rgba(38, 0, 255, 0.1);
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    border-radius: 40px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: rgba(255, 217, 0, 0.858);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.register-link p a:hover{
+    text-decoration: underline;
+    color: rgba(255, 217, 0, 0.858);
+    font-family: 'Franklin Gothic Medium';
+}
+  
+.btn { 
+    transition: transform 0.5s ease-in-out; 
+    font-family: 'Franklin Gothic Medium';
+    margin-top: 20px;
+}
+
+.btn:hover {
+    transform: scale(1.1); 
+}
+  
+p {
+    font-family: 'Franklin Gothic Medium';
+}
+
+.success-box {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .alert {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }

@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium';
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #0033cc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #003399;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo img {
+    width: 20rem;
+}
+
+.logo img:hover {
+    filter: brightness(0.5);
+}
+
+.search-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    width: 500px;
+}
+
+.search-button {
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.search-button img {
+    width: 20px;
+}
+
+.search-button img:hover {
+    filter: brightness(0.5);
+}
+
+.profile-cart {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cart, .profile {
+    display: flex;
+    align-items: center;
+}
+
+.cart {
+    background-color: #003399;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart img {
+    width: 2.5rem;
+}
+
+.cart img:hover {
+    filter: brightness(0.5);
+}
+
+.profile {
+    background-color: #003399;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.profile img {
+    width: 2.5rem;
+    border-radius: 100%;
+}
+
+.profile img:hover {
+    filter: brightness(0.5);
+}
+
+#logout a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.cart-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cart-content img {
+    display: block; 
+    margin: 0 auto;
+}
+
+.cart-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #003399;
+}
+
+.cart-content table {
+    margin: 0 auto; /* Center the table */
+    background-color: white; /* Set table background to white */
+    width: 75%; /* Adjust width for better appearance */
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visual */
+    padding-bottom: 10rem; 
+    margin-bottom: 10rem;
+}
+
+.cart-content th, .cart-content td {
+    padding: 15px;
+    border: 1px solid #333;
+    vertical-align: middle;
+}
+
+.cart-content th {
+    background-color: #0033cc;
+    color: white;
+}
+
+.button {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+}
+
+.checkout {
+    background-color: blue;
+    color: white;
+}
+
+.cart-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.footer-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-total {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.footer-total strong {
+    font-size: 2rem;
+    color: #0033cc;
+}
+
+.checkout-button {
+    background-color: #0033cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.checkout-button:hover {
+    background-color: #003399;
+}
+
+.button.edit {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+}
+
+.button.edit:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

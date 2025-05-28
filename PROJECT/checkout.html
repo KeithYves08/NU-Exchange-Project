@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="checkouts.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="main_page.html"><img src="/images/NUEX.png"></a></div>
+        <div class="search-container">
+            <input type="text" placeholder="Search Products">
+            <button class="search-button"><img src="/images/search-icon.png"></button>
+        </div>
+        <div class="profile-cart">
+            <div class="cart" ><a href = "cart.html"><img src="/images/cart.png"></a></div>
+            <div class="profile"><a href = "profile.html"><img src="/images/r.png" href ="profile.html"></a></div>
+            <div class = "logout" id="logout"><a alt="logout" href = "logout.php">LOGOUT</a></div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="left">
+            <h2>Delivery</h2>
+            <form action="checkout.php" method="post">
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="Philippines">Philippines</option>
+                    <option value="USA">USA</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Korea">Korea</option>
+                </select>
+                
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fullname" placeholder="First name" required>
+                
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Last name" required>
+                
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Address (Include your Barangay)" required>
+                
+                <div class="flex-container">
+                    <div>
+                        <label for="postal">Postal Code</label>
+                        <input type="text" id="postal" name="postal" placeholder="Postal Code" required>
+                    </div>
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="City" required>
+                    </div>
+                </div>
+            
+                <label for="region">Region</label>
+                <select id="region" name="region">
+                    <option value="Region1">Region I</option>
+                    <option value="Region2">Region II</option>
+                    <option value="Region3">Region III</option>
+                    <option value="Region4A">Region IV-A (Calabarzon)</option>
+                    <option value="Region4B">Region IV-B (Mimaropa)</option>
+                    <option value="Region5">Region V</option>
+                    <option value="Region6">CAR (Cordillera Administrative Region)</option>
+                    <option value="Region7">NCR (National Capital Region)</option>
+                </select> 
+                
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+                
+                <div class="payment-method">
+                    <h2>Payment Method</h2>
+                    <div>
+                        <input type="radio" id="cod" name="shipping" value="COD">
+                        <label for="cod">Cash on Delivery</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="credit" name="shipping" value="Credit Card">
+                        <label for="credit">Credit Card</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="debit" name="shipping" value="Debit Card">
+                        <label for="debit">Bank Transfer</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="gcash" name="shipping" value="Gcash">
+                        <label for="gcash">Gcash</label>
+                    </div>
+                </div>
+
+                <input type="submit" id="checkout" name="checkout" value="Checkout">
+            </form>
+        </div>
+        <div class="right">
+            <h2>Order Summary</h2>
+            <div class="order-item">
+                <p>Product 1</p>
+                <p>₱1,000.00</p>
+            </div>
+            <div class="order-item">
+                <p>Product 2</p>
+                <p>₱500.00</p>
+            </div>
+            <hr>
+            <div class="total">
+                <p><strong>Total</strong></p>
+                <p><strong>₱1,500.00</strong></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
